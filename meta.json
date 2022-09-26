@@ -1,0 +1,17 @@
+{
+  "label": "Animation",
+  "css_assets": [],
+  "global": false,
+  "help_text": "Animation module design to deliver emotional impression",
+  "host_template_types": [
+    "PAGE",
+    "BLOG_POST",
+    "BLOG_LISTING"
+  ],
+  "icon": "",
+  "js_assets": [],
+  "other_assets": [],
+  "smart_type": "NOT_SMART",
+  "tags": ["animation, lottie"],
+  "is_available_for_new_content": true
+}

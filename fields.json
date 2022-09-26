@@ -1,0 +1,132 @@
+[
+  {
+    "label": "Animation file",
+    "name": "file",
+    "type": "group",
+    "children": [
+      {
+        "label" : "Lottie JSON file",
+        "name" : "lottie_file",
+        "help_text": "More information how Lottie files works https://lottiefiles.com/",
+        "type" : "file",
+        "picker" : "file"
+      }
+    ]
+  },
+  {
+    "label": "Settings",
+    "name": "settings",
+    "type": "group",
+    "children": [
+      {
+        "label": "Controls",
+        "name": "controls",
+        "inline_help_text": "Display animation controls: play, pause, slider.",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Autoplay",
+        "name": "autoplay",
+        "inline_help_text": "Play animation on load.",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Hover",
+        "name": "hover",
+        "inline_help_text": "Play animation on hover.",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "label": "Loop",
+        "name": "loop",
+        "inline_help_text": "Set to repeat animation.",
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "label": "Speed (1x)",
+        "name": "speed",
+        "inline_help_text": "Set to increase animation speed by X times.",
+        "type": "number",
+        "default": 1
+      }
+    ]
+  },
+  {
+    "label": "Styles",
+    "name": "styles",
+    "tab": "STYLE",
+    "type": "group",
+    "children": [
+      {
+        "label": "Width",
+        "name": "width",
+        "type": "group",
+        "children": [
+          {
+            "label": "Measurement units",
+            "name": "unit",
+            "type": "choice",
+            "choices": [
+              ["px","Pixels (px)"],
+              ["vw","Visual widths (vw)"],
+              ["%","Percents (%)"],
+              ["rem","Root element font size (rem)"]
+            ],
+            "display": "radio",
+            "default": "%"
+          },
+          {
+            "label" : "Value",
+            "name" : "value",
+            "required" : true,
+            "locked" : false,
+            "min" : 1,
+            "step" : 1,
+            "type" : "number",
+            "default" : 100
+          }
+        ]
+      },
+      {
+        "label": "Height",
+        "name": "height",
+        "type": "group",
+        "children": [
+          {
+            "label": "Measurement units",
+            "name": "unit",
+            "type": "choice",
+            "choices": [
+              ["px","Pixels (px)"],
+              ["vh","Visual heights (vh)"],
+              ["%","Percents (%)"],
+              ["rem","Root element font size (rem)"]
+            ],
+            "display": "radio",
+            "default": "vh"
+          },
+          {
+            "label" : "Value",
+            "name" : "value",
+            "required" : true,
+            "locked" : false,
+            "min" : 1,
+            "step" : 1,
+            "type" : "number",
+            "default" : 60
+          }
+        ]
+      },
+      {
+        "label": "Background",
+        "name": "bg",
+        "help_text": "No color chosen here will set background to transparent.",
+        "type": "color"
+      }
+    ]
+  }
+]
